@@ -43,11 +43,11 @@ import {
 import {
   OneColumnLayoutComponent,
   SampleLayoutComponent,
-  ThreeColumnsLayoutComponent,
-  TwoColumnsLayoutComponent,
+  //ThreeColumnsLayoutComponent,
+  //TwoColumnsLayoutComponent,
 } from './layouts';
-import { DEFAULT_THEME } from './styles/theme.default';
-import { COSMIC_THEME } from './styles/theme.cosmic';
+//import { DEFAULT_THEME } from './styles/theme.default';
+//import { COSMIC_THEME } from './styles/theme.cosmic';
 import { CORPORATE_THEME } from './styles/theme.corporate';
 
 const BASE_MODULES = [CommonModule, FormsModule, ReactiveFormsModule];
@@ -82,8 +82,8 @@ const COMPONENTS = [
   TinyMCEComponent,
   OneColumnLayoutComponent,
   SampleLayoutComponent,
-  ThreeColumnsLayoutComponent,
-  TwoColumnsLayoutComponent,
+  //ThreeColumnsLayoutComponent,
+  //TwoColumnsLayoutComponent,
 ];
 
 const ENTRY_COMPONENTS = [
@@ -101,9 +101,9 @@ const PIPES = [
 const NB_THEME_PROVIDERS = [
   ...NbThemeModule.forRoot(
     {
-      name: 'cosmic',
+      name: 'corporate',
     },
-    [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME ],
+    [ /*DEFAULT_THEME, COSMIC_THEME,*/ CORPORATE_THEME ],
   ).providers,
   ...NbSidebarModule.forRoot().providers,
   ...NbMenuModule.forRoot().providers,
